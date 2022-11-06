@@ -1,5 +1,6 @@
 class BooksController < ApplicationController
-before_action :is_matching_login_user, only: [:edit, :update]
+  before_action :is_matching_login_user, only: [:edit, :update]
+  impressionist actions: [:show]
 
   def show
     @book_new = Book.new

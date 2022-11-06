@@ -16,7 +16,8 @@
           <th>Favorite</th>
           <th>Favorite<br>(last week)</th>
           <th>Comment</th>
-          <th colspan="5"></th>
+          <th>PageView</th>
+          <th></th>
         </tr>
         <tr>
           <td>
@@ -39,6 +40,9 @@
           </td>
           <td class="comment_count">
             コメント数:<%= @book.book_comments.count %>
+          </td>
+          <td>
+            閲覧数:<%= @book.impressionist_count %>
           </td>
           <% if @book.user == current_user %>
           <td>
